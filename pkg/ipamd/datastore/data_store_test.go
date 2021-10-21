@@ -396,6 +396,7 @@ func TestGetIPStatsV4(t *testing.T) {
 			TotalIPs:    2,
 			AssignedIPs: 1,
 			CooldownIPs: 0,
+			DelayedReleaseIPs: 1,
 		},
 		*ds.GetIPStats("4"),
 	)
